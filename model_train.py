@@ -24,10 +24,17 @@ vector = TfidfVectorizer(stop_words='english', max_df=0.7)
 tf_train = vector.fit_transform(x_train)
 tf_test = vector.transform(x_test)
 
-passive_aggressive_classifier = PassiveAggressiveClassifier(max_iter=50)
+passive_aggressive_classifier = PassiveAggressiveClassifier(max_iter=60)
 passive_aggressive_classifier.fit(tf_train, y_train)
 
 y_predict = passive_aggressive_classifier.predict(tf_test)
 score = accuracy_score(y_test, y_predict)
 
 print("The current accuracy of the model is: " + str(round(score*100, 2)) + "%")
+
+# Creating confusion matrix to identify  the  following: [True Positive,False Positive, False Negative,True Negative]
+# False Positive: true news classified as 'fake'
+# False Negative: false news classified as 'correct'
+# True Positive: false news  classified as fake
+# true negative: true news classified as correct
+print(confusion_matrix(y_test, y_predict, labels=["FAKE", "REAL"]))
