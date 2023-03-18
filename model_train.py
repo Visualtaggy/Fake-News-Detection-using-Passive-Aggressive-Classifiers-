@@ -11,3 +11,7 @@ import pickle
 data_set = pd.read_csv("data.csv")
 # Seprating labels like "Fake" / "Real" from our CSV
 labels = data_set.label
+
+# Splitting data for training and testing
+x_train, x_test, y_train, y_test = train_test_split(
+    data_set["text"], labels, test_size=0.2, random_state=20)
