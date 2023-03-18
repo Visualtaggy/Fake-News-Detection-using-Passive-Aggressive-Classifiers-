@@ -6,3 +6,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 import pickle
+
+# Importing Core data
+data_set = pd.read_csv("data.csv")
+# Seprating labels like "Fake" / "Real" from our CSV
+labels = data_set.label
