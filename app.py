@@ -21,7 +21,7 @@ def prediction():
         predict = model.predict(vector.transform([news]))[0]
         print(predict)
 
-        return render_template("prediction.html", prediction_text="News headline is -> {}".format(predict))
+        return render_template("prediction.html", prediction_text="This news is {}".format(predict))
 
     else:
         return render_template("prediction.html")
