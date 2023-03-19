@@ -41,3 +41,6 @@ print(confusion_matrix(y_test, y_predict, labels=["FAKE", "REAL"]))
 
 # Logic to publish the model with name "output_model.pkl"
 pickle.dump(passive_aggressive_classifier, open('output_model.pkl', 'wb'))
+
+# Logic to publish TF-ID-Vectorizer
+pickle.dump(passive_aggressive_classifier, open('TFID_Vectorizer.pkl', 'wb'))
