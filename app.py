@@ -4,7 +4,7 @@ import pickle
 vector = pickle.load(open("TFID_Vectorizer.pkl", 'rb'))
 model = pickle.load(open("output_model.pkl", 'rb'))
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 
 @app.route('/')
