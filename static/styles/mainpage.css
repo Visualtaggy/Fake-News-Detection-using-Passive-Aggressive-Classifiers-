@@ -8,6 +8,7 @@ body {
   }
 .burger{
   margin-top: 20px;
+  cursor: pointer;
 }
 .line1, .line2, .line3{
   width: 3rem;
@@ -183,4 +184,41 @@ body {
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .nav-bar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    z-index: 1;
+    opacity: 1;
+
+    /* CONTROL OF HIDDEN PAGE */
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+  }
+  .nav-links{
+    font-size:  4rem;
+    flex-basis: 30rem;
+  }
+  .nav-links h3{
+    padding: 3rem 0rem;
+  }
+  .contact{
+    flex-basis: 30rem;
+  }
+
+  .contact h2{
+    font-size: 3rem;
+    padding: 2rem 0rem;
+  }
+  .contact p{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
