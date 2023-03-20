@@ -188,7 +188,7 @@ body {
     }
   }
 
-  .nav-bar{
+  .nav-bar{    
     position: fixed;
     top:0;
     left: 0;
@@ -200,6 +200,7 @@ body {
     align-items:  center;
     z-index: -1;
     opacity: 1;
+    font-family: "Montserrat", sans-serif;
 
     /* CONTROL OF HIDDEN PAGE */
     clip-path: circle(50px at 100% -10%);
