@@ -1,5 +1,6 @@
 //Selector
 const burger = document.querySelector(".burger");
+const mouse = document.querySelector(".cursor");
 //Functions
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
@@ -17,5 +18,11 @@ function navToggle(e) {
   }
 }
 
+function cursor(e) {
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+}
+
 //Event Listener
 burger.addEventListener("click", navToggle);
+window.addEventListener("mousemove", cursor);
