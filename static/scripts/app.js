@@ -25,7 +25,6 @@ function cursor(e) {
 
 function activeCursor(e) {
   const item = e.target;
-  console.log(item);
 
   if (
     item.id === "logoImg" ||
