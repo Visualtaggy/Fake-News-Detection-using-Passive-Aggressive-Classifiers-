@@ -126,6 +126,7 @@ body {
     position: absolute;
     top: -100%;
     animation: anim4 2s forwards 2.5s;
+    z-index: 2;
   }
   #logo {
     float: left;
