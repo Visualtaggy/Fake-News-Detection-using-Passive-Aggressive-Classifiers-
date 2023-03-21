@@ -66,6 +66,7 @@ body {
   #box2 {
     width: auto;
     height: auto;
+    padding-top: 5px;
     font-family: "Bahnschrift Condensed";
     color: white;
     font-size: 10em;
@@ -100,7 +101,7 @@ body {
     font-family: arial;
     top: -100%;
     animation: anim5 2s forwards 3s;
-    
+
     padding: 0.5rem 2rem;
     border: none;
     color: white;
