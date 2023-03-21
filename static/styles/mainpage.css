@@ -236,6 +236,8 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: background, transform;
 }
 .cursor.nav-active{
   background: rgb(208, 72, 159);
