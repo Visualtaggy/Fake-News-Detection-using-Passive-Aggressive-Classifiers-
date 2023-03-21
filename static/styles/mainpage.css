@@ -5,6 +5,8 @@
 }
 body {
     background: #1e242a;
+    overflow-x: hidden;
+
   }
 .burger{
   margin-top: 20px;
@@ -234,4 +236,8 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+.cursor.nav-active{
+  background: rgb(208, 72, 159);
+  transform: scale(3);
 }
