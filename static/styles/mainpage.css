@@ -269,3 +269,11 @@ body {
   background: white;
   transform: scale(3);
 }
+.cursor-text{
+  font-family: "Bahnschrift Condensed";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.5rem;
+  transform: translate(-50%, -50%);
+}
