@@ -92,6 +92,22 @@ body {
     height: 100px;
     z-index: -1;
   }
+  #custom-button{
+    
+    text-align: justify;
+    position: absolute;
+    margin-top: 64px;
+    font-family: arial;
+    top: -100%;
+    animation: anim5 2s forwards 3s;
+    
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    
+
+  }
   #text2 {
     width: 300px;
     font-family: arial;
