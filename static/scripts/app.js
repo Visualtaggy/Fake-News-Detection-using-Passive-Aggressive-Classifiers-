@@ -1,6 +1,7 @@
 //Selector
 const burger = document.querySelector(".burger");
 const mouse = document.querySelector(".cursor");
+const mouseTxt = mouse.querySelector("span");
 //Functions
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
@@ -27,6 +28,7 @@ function cursor(e) {
 
 function activeCursor(e) {
   const item = e.target;
+  console.log(item);
 
   if (
     item.id === "logoImg" ||
@@ -37,6 +39,13 @@ function activeCursor(e) {
     mouse.classList.add("nav-active");
   } else {
     mouse.classList.remove("nav-active");
+  }
+  if (item.classList.contains("custom-button")) {
+    mouse.classList.add("explore-active");
+    mouseTxt.innerText = "Tap";
+  } else {
+    mouse.classList.remove("explore-active");
+    mouseTxt.innerText = "";
   }
 }
 
