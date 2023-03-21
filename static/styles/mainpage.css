@@ -140,9 +140,10 @@ body {
     font-size: 14px;
     color: white;
     letter-spacing: 2px;
-    margin-right: 150px;
+    margin-right: 90px;
     margin-top: 20px;
     float: right;
+    padding-right: 130px;
   }
   #menu ul {
     list-style: none;

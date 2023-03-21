@@ -30,9 +30,8 @@ function activeCursor(e) {
   if (
     item.id === "logoImg" ||
     item.classList.contains("burger") ||
-    item.classList.contains(".line1") ||
-    item.classList.contains(".line2") ||
-    
+    item.id === "line1" ||
+    item.id === "line2"
   ) {
     mouse.classList.add("nav-active");
   } else {
