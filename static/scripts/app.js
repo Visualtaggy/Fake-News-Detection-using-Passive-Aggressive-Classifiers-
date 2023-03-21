@@ -23,6 +23,17 @@ function cursor(e) {
   mouse.style.left = e.pageX + "px";
 }
 
+function activeCursor(e) {
+  const item = e.target;
+
+  if (item.id === "logoImg" || item.classList.contains("burger")) {
+    mouse.classList.add("nav-active");
+  } else {
+    mouse.classList.remove("nav-active");
+  }
+}
+
 //Event Listener
 burger.addEventListener("click", navToggle);
 window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", activeCursor);
