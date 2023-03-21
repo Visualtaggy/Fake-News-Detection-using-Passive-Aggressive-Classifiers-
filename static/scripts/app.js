@@ -25,8 +25,15 @@ function cursor(e) {
 
 function activeCursor(e) {
   const item = e.target;
+  console.log(item);
 
-  if (item.id === "logoImg" || item.classList.contains("burger")) {
+  if (
+    item.id === "logoImg" ||
+    item.classList.contains("burger") ||
+    item.classList.contains(".line1") ||
+    item.classList.contains(".line2") ||
+    
+  ) {
     mouse.classList.add("nav-active");
   } else {
     mouse.classList.remove("nav-active");
