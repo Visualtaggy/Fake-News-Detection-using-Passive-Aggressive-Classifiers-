@@ -2,6 +2,7 @@
 const burger = document.querySelector(".burger");
 const mouse = document.querySelector(".cursor");
 const mouseTxt = mouse.querySelector("span");
+const exploreBtn = document.getElementById("custom-button");
 //Functions
 function navToggle(e) {
   if (!e.target.classList.contains("active")) {
@@ -49,7 +50,12 @@ function activeCursor(e) {
   }
 }
 
+function loadNextPage(e) {
+  location.href = "/prediction";
+}
+
 //Event Listener
 burger.addEventListener("click", navToggle);
 window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
+exploreBtn.addEventListener("click", loadNextPage);
