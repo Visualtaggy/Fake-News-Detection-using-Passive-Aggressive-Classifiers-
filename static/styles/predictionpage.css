@@ -150,3 +150,13 @@ body {
       /* position: absolute; */
       top: -100%;
     }
+    #box1 {
+      content: "";
+      position: absolute;
+      width: 530px;
+      height: 625px;
+      background-image: url("4.png");
+      left: 58%;
+      top:15%;
+      z-index: -6;
+    }
