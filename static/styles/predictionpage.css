@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+body {
+    background: #1e242a;
+    overflow-x: hidden;
+
+  }
+#menu {
+    margin-top: 20px;
+    font-family: "Bahnschrift Condensed";
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    margin-right: 90px;
+    margin-top: 20px;
+    float: right;
+    padding-right: 130px;
+  }
+  #menu ul {
+    list-style: none;
+  }
+  #menu ul li {
+    display: inline-block;
+    margin-left: 100px;
+  }
