@@ -33,14 +33,20 @@
     </div>
 
     <div id="box2">
-      <p class="text-primary">{{prediction_text}}</p>
       <form action="/prediction" method="POST">
-        <label><b>Enter news headlines</b></label>
+        <label><b>Checkmate!</b></label>
         <br>
-        <input type="text" id="news" name="news" />
-        <button type="submit" class="form-submit-button">Submit</button>
+        <input type="text" id="news" name="news" placeholder="Enter news headlines" style="font-size: 30px; text-align: center;" />
+        <button type="submit" class="form-submit-button">Verify.</button>
       </form>
     </div>
+    <div id="box4">
+      <div id="text2">
+        <p class="text-primary">{{prediction_text}}</p>
+      </div>
+    </div>
+    
+    
 
 
 
