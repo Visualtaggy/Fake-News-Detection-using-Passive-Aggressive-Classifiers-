@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prediction Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/predictionpage.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="menu">
+      <ul>
+        <li>HOME</li>
+        <li>SERVICES</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+        <li>HELP</li>
+      </ul>
+    </div>
     <p class="text-primary"><b>{{prediction_text}}</b></p>
     <form action="/prediction" method="POST">
       <label>Enter news headlines</label>
