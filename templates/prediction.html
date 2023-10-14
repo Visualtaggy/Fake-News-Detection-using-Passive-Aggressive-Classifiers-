@@ -31,12 +31,19 @@
         <li>HELP</li>
       </ul>
     </div>
-    <p class="text-primary"><b>{{prediction_text}}</b></p>
-    <form action="/prediction" method="POST">
-      <label>Enter news headlines</label>
-      <input type="text" id="news" name="news" />
-      <button type="submit">Submit</button>
-    </form>
+
+    <div id="box2">
+      <p class="text-primary"><b>{{prediction_text}}</b></p>
+      <form action="/prediction" method="POST">
+        <label>Enter news headlines</label>
+        <br>
+        <input type="text" id="news" name="news" />
+        <button type="submit" class="form-submit-button">Submit</button>
+      </form>
+    </div>
+
+
+
     <div id="cursor" class="cursor">
       <span class="cursor-text"> </span>
     </div>
