@@ -9,6 +9,24 @@ body {
     overflow-x: hidden;
 
   }
+  #box3 {
+    overflow: hidden;
+  }
+  #container {
+    width: 100%;
+    /* position: absolute; */
+    top: -100%;
+    /* animation: anim4 2s forwards 2.5s;
+    z-index: 1; */
+  }
+  #logo {
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  #logo img {
+    width: 50px;
+  }
 #menu {
     margin-top: 20px;
     font-family: "Bahnschrift Condensed";
